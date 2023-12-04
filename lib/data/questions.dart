@@ -2,139 +2,141 @@ import 'package:quiz_app/models/quiz_questions.dart';
 import 'dart:math';
 
 final questions = [
-  QuizQuestion(
-    'What command allows you to associate an alias with another command?',
-    ['alias', 'shortcut', 'appliance', 'assoc'],
+  const QuizQuestion(
+    'Qual comando permite associar um apelido a outro comando?',
+    ['alias', 'atalho', 'aparelho', 'assoc'],
   ),
-  QuizQuestion(
-    'Which command is used to bring a paused command to the background?',
-    ['bg', 'back', 'pause', 'resume'],
+  const QuizQuestion(
+    'Qual comando é usado para levar um comando pausado para o plano de fundo?',
+    ['bg', 'voltar', 'pausar', 'resumir'],
   ),
-  QuizQuestion(
-    'What does the "cal" command do in the shell?',
+  const QuizQuestion(
+    'O que o comando "cal" faz no shell?',
     [
-      'Displays a calendar in the terminal',
-      'Calculates basic expressions',
-      'Calls a function',
-      'Cleans the system',
+      'Exibe um calendário no terminal',
+      'Calcula expressões básicas',
+      'Chama uma função',
+      'Limpa o sistema',
     ],
   ),
-  QuizQuestion(
-    'Which command cancels the printing of documents in the queue?',
-    ['cancel', 'stopprint', 'killprint', 'pauseprint'],
+  const QuizQuestion(
+    'Qual comando cancela a impressão de documentos na fila?',
+    ['cancel', 'pararimpressao', 'matarimpressao', 'pausarimpressao'],
   ),
-  QuizQuestion(
-    'What command is used to show the content of a file on the terminal?',
-    ['cat', 'view', 'readfile', 'display'],
+  const QuizQuestion(
+    'Qual comando é usado para mostrar o conteúdo de um arquivo no terminal?',
+    ['cat', 'ver', 'lerarquivo', 'exibir'],
   ),
-  QuizQuestion(
-    'What command changes the permissions of a file?',
-    ['chmod', 'permissions', 'changeperm', 'securefile'],
+  const QuizQuestion(
+    'Qual comando altera as permissões de um arquivo?',
+    ['chmod', 'permissões', 'alteraperm', 'arquivoseguro'],
   ),
-  QuizQuestion(
-    'Which command is used to change the owner of a file?',
-    ['chown', 'changeowner', 'owner', 'chmod'],
+  const QuizQuestion(
+    'Qual comando é usado para alterar o proprietário de um arquivo?',
+    ['chown', 'alteraproprietario', 'proprietario', 'chmod'],
   ),
-  QuizQuestion(
-    'What is the purpose of a StatefulWidget in Flutter?',
+  const QuizQuestion(
+    'Qual é o objetivo de um StatefulWidget no Flutter?',
     [
-      'Update UI as data changes',
-      'Update data as UI changes',
-      'Ignore data changes',
-      'Render UI that does not depend on data',
+      'Atualizar a UI conforme os dados mudam',
+      'Atualizar dados conforme a UI muda',
+      'Ignorar mudanças nos dados',
+      'Renderizar uma UI que não depende de dados',
     ],
   ),
-  QuizQuestion(
-    'What command is used to compile C/C++/etc with LLVM infrastructure?',
-    ['clang', 'llvmcc', 'gcc', 'compile'],
+  const QuizQuestion(
+    'Qual comando é usado para compilar C/C++/etc com a infraestrutura LLVM?',
+    ['clang', 'llvmcc', 'gcc', 'compilar'],
   ),
-  QuizQuestion(
-    'Which command is used to clear the terminal screen?',
-    ['clear', 'cls', 'refresh', 'clean'],
+  const QuizQuestion(
+    'Qual comando é usado para limpar a tela do terminal?',
+    ['clear', 'cls', 'refresh', 'limpar'],
   ),
-  QuizQuestion(
-    'What command executes another command in the background?',
-    ['command &', 'runbg', 'background', 'startbg'],
+  const QuizQuestion(
+    'Qual comando executa outro comando em segundo plano?',
+    ['comando &', 'executabg', 'segundoplano', 'iniciabg'],
   ),
-  QuizQuestion(
-    'What command redirects the output of a command to a file (overwrite)?',
-    ['command > file', 'output > file', 'write > file', 'overwrite > file'],
+  const QuizQuestion(
+    'Qual comando redireciona a saída de um comando para um arquivo (substituição)?',
+    [
+      'comando > arquivo',
+      'saida > arquivo',
+      'escreve > arquivo',
+      'substitui > arquivo'
+    ],
   ),
-  QuizQuestion(
-    'What command redirects the output of a command to a file (append)?',
-    ['command >> file', 'output >> file', 'append >> file', 'concat >> file'],
+  const QuizQuestion(
+    'Qual comando redireciona a saída de um comando para um arquivo (acréscimo)?',
+    [
+      'comando >> arquivo',
+      'saida >> arquivo',
+      'acrescenta >> arquivo',
+      'concatena >> arquivo'
+    ],
   ),
-  QuizQuestion(
-    'What command pipes the output of one command to another?',
-    ['command1 | command2', 'pipe', 'output1 | output2', 'link | link'],
+  const QuizQuestion(
+    'Qual comando encaminha a saída de um comando para outro?',
+    ['comando1 | comando2', 'pipe', 'saida1 | saida2', 'link | link'],
   ),
-  QuizQuestion(
-    'Which command copies files and directories?',
-    ['cp', 'copy', 'move', 'duplicate'],
+  const QuizQuestion(
+    'Qual comando copia arquivos e diretórios?',
+    ['cp', 'copiar', 'mover', 'duplicar'],
   ),
-  QuizQuestion(
-    'What command displays the current date and time?',
-    ['date', 'time', 'datetime', 'now'],
+  const QuizQuestion(
+    'Qual comando exibe a data e hora atual?',
+    ['date', 'time', 'datetime', 'agora'],
   ),
-  QuizQuestion(
-    'Which command compares two files line by line?',
-    ['diff', 'compare', 'linebyline', 'diffcheck'],
+  const QuizQuestion(
+    'Qual comando compara dois arquivos linha por linha?',
+    ['diff', 'comparar', 'linhaalinha', 'verificardiferencas'],
   ),
-  QuizQuestion(
-    'What command shows free space on the file system?',
-    ['df', 'free', 'space', 'filesystem'],
+  const QuizQuestion(
+    'Qual comando mostra espaço livre no sistema de arquivos?',
+    ['df', 'livre', 'espaco', 'sistemaarquivos'],
   ),
-  QuizQuestion(
-    'Which command shows space used by directories?',
-    ['du', 'usedspace', 'directories', 'diskspace'],
+  const QuizQuestion(
+    'Qual comando mostra o espaço ocupado por diretórios?',
+    ['du', 'usado', 'diretorios', 'espacousado'],
   ),
-  QuizQuestion(
-    'What command displays boot and kernel messages?',
-    ['dmesg', 'kernelmsg', 'bootmsg', 'messages'],
+  const QuizQuestion(
+    'Qual comando exibe mensagens de inicialização e do kernel?',
+    ['dmesg', 'mensageminicializacao', 'mensagemsistema', 'kernelmsg'],
   ),
-  QuizQuestion(
-    'What command allows installing DEB packages?',
-    ['dpkg', 'install', 'debinstall', 'packagemanager'],
+  const QuizQuestion(
+    'Qual comando permite instalar pacotes DEB?',
+    ['dpkg', 'instalar', 'debinstalar', 'gerenciadorpacotes'],
   ),
-  QuizQuestion(
-    'What command writes a message to the terminal?',
-    ['echo', 'write', 'print', 'message'],
+  const QuizQuestion(
+    'Qual comando escreve uma mensagem no terminal?',
+    ['echo', 'escrever', 'imprimir', 'mensagem'],
   ),
-  QuizQuestion(
-    'Which command allows manipulating disk partition tables?',
-    ['fdisk', 'partitions', 'diskmanage', 'partitiontable'],
+  const QuizQuestion(
+    'Qual comando permite manipular tabelas de partições de disco?',
+    ['fdisk', 'particoes', 'gerenciadisco', 'tabelaparticoes'],
   ),
-  QuizQuestion(
-    'What command brings a paused command to the foreground?',
-    ['fg', 'foreground', 'resume', 'bringforward'],
+  const QuizQuestion(
+    'Qual comando traz um comando pausado para o primeiro plano?',
+    ['fg', 'primeiroplano', 'resumir', 'trazerfrente'],
   ),
-  QuizQuestion(
-    'Which command identifies the type of a file?',
-    ['file', 'filetype', 'identify', 'fileinfo'],
+  const QuizQuestion(
+    'Qual comando identifica o tipo de um arquivo?',
+    ['file', 'tipofile', 'identificar', 'infoarquivo'],
   ),
-  QuizQuestion(
-    'What is the traditional C/C++ compiler in the GNU Compiler Collection?',
-    ['gcc', 'gcompiler', 'clang', 'compile'],
+  const QuizQuestion(
+    'Qual é o compilador tradicional de C/C++ no GNU Compiler Collection?',
+    ['gcc', 'compiladorgnu', 'clang', 'compilar'],
   ),
-  QuizQuestion(
-    'What command shows lines matching a pattern in a file?',
-    ['grep', 'findpattern', 'matchlines', 'searchpattern'],
+  const QuizQuestion(
+    'Qual comando mostra linhas que correspondem a um padrão em um arquivo?',
+    ['grep', 'encontrarpadrao', 'corresponderlinhas', 'buscapadrao'],
   ),
-  QuizQuestion(
-    'What command displays the beginning of a file?',
-    ['head', 'beginning', 'startfile', 'headfile'],
+  const QuizQuestion(
+    'Qual comando exibe o início de um arquivo?',
+    ['head', 'inicio', 'arquivoinicio', 'cabecalo'],
   ),
-  QuizQuestion(
-    'Which command terminates a process?',
-    ['kill', 'terminate', 'stop', 'endprocess'],
-  ),
-  QuizQuestion(
-    'What command terminates all processes with a certain name?',
-    ['killall', 'terminateall', 'stopall', 'endall'],
-  ),
-  QuizQuestion(
-    'Which command creates links (shortcuts) between files?',
-    ['ln', 'link', 'shortcut', 'createlink'],
+  const QuizQuestion(
+    'Qual comando encerra um processo?',
+    ['kill', 'encerrar', 'parar', 'finalizarprocesso'],
   ),
 ];
 final _random = Random();
