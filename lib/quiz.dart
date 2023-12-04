@@ -20,13 +20,14 @@ class _QuizState extends State<Quiz> {
   void switchScreen() {
     setState(() {
       activeScreen = 'questions-screen';
+      questions.shuffle();
     });
   }
 
   void chooseAnswers(String answer) {
     selectedAnswers.add(answer);
 
-    if (selectedAnswers.length == questions.length) {
+    if (selectedAnswers.length == 10) {
       setState(() {
         activeScreen = 'results-screen';
       });
@@ -37,6 +38,7 @@ class _QuizState extends State<Quiz> {
     setState(() {
       selectedAnswers = [];
       activeScreen = 'questions-screen';
+      questions.shuffle();
     });
   }
 
