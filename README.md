@@ -1,16 +1,19 @@
-# quiz_app
+# App de Quiz sobre comandos bash!
 
-A new Flutter project.
+Esse aplicativo é um simples Quiz sobre comandos utilizados no linux.
 
-## Getting Started
 
-This project is a starting point for a Flutter application.
+##Para modificar!
 
-A few resources to get you started if this is your first Flutter project:
+Para modificar, aumentar, ou diminuir as perguntas, basta ir para:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+quiz_app\lib\data\questions.dart
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+e alterar as perguntas lá da seguinte maneira:
+
+const QuizQuestion(
+    'SUA PERGUNTA',
+    ['RESPOSTA CORRETA', 'Opção errada', 'Opção errada', 'Opção errada'],
+  ),
+
+Dessa maneira, é possível alterar o Quiz para qualquer assunto de sua preferência.
