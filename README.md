@@ -5,11 +5,11 @@ Esse aplicativo é um simples Quiz sobre comandos utilizados no linux.
 
 ## Para modificar!
 
-Para modificar, aumentar, ou diminuir as perguntas, basta ir para:
+Para modificar, aumentar, ou diminuir as perguntas, basta fazer um fork do repositório e ir para:
 
 quiz_app\lib\data\questions.dart
 
-e alterar as perguntas lá da seguinte maneira:
+altere ou inclua perguntas da seguinte maneira:
 
 const QuizQuestion(
     'SUA PERGUNTA',
