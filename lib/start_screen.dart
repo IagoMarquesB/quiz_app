@@ -18,7 +18,7 @@ class StartScreen extends StatelessWidget {
           ),
           const SizedBox(height: 80),
           const Text(
-            "Let's start the Quiz!",
+            "Vamos começar o Quiz!",
             style: TextStyle(
               color: Colors.white,
               fontSize: 24,
@@ -31,7 +31,7 @@ class StartScreen extends StatelessWidget {
               foregroundColor: Colors.white,
             ),
             icon: const Icon(Icons.arrow_right_alt),
-            label: const Text("Start Quiz"),
+            label: const Text("Iniciar Quiz"),
           ),
         ],
       ),
