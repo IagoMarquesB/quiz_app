@@ -29,7 +29,7 @@ class ResultsScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final summaryData = getSummaryData();
-    final numTotalQuestion = questions.length;
+    // final numTotalQuestion = questions.length;
     final numCorrenctQuestion = summaryData.where((data) {
       return data['user_answer'] == data['correct_answer'];
     }).length;
@@ -43,7 +43,7 @@ class ResultsScreen extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Text(
-              'You answered  out $numCorrenctQuestion of $numTotalQuestion questions correctly!',
+              'Você respondeu $numCorrenctQuestion de 10 questions corretamente!',
               style: GoogleFonts.raleway(
                 color: const Color.fromRGBO(255, 255, 255, 50),
                 fontSize: 24,
@@ -60,7 +60,7 @@ class ResultsScreen extends StatelessWidget {
                 foregroundColor: Colors.white,
               ),
               icon: const Icon(Icons.refresh),
-              label: const Text('Restart Quiz!'),
+              label: const Text('Recomeçar Quiz!'),
             )
           ],
         ),
